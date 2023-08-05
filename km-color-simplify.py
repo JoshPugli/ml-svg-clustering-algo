@@ -13,7 +13,7 @@ def rgb_to_hex(rgb):
 
 def extract_colors(svg_path):
     tree = ElementTree()
-    tree.parse(svg_path)
+    tree.parse(f"svgs/{svg_path}")
     colors = []
 
     # Regular expression to find RGB hex codes
@@ -95,7 +95,7 @@ def adjust_colors(svg_tree: ElementTree, clusters):
 
 
 def save_svg(svg_tree, output_path):
-    svg_tree.write(output_path)
+    svg_tree.write(f"svgs/{output_path}")
 
 
 def main(input_svg, output_svg, k):
