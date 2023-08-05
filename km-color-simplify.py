@@ -1,9 +1,7 @@
 from xml.etree.ElementTree import ElementTree, Element, tostring
 from sklearn.cluster import KMeans
-from bs4 import BeautifulSoup
 import re
 import numpy as np
-import matplotlib.pyplot as plt
 from copy import deepcopy
 
 
